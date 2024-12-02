@@ -62,8 +62,8 @@ const ResponsePage = () => {
   const [userInput, setUserInput] = useState("");
   const [context, setContext] = useState("subject");
 
-  // Find the user profile by ID
-  const currentUserProfile = sampleProfiles.find((profile) => profile.id === parseInt(id));
+// eslint-disable-next-line no-unused-vars
+const currentUserProfile = sampleProfiles.find((profile) => profile.id === parseInt(id));
 
   const handleSendMessage = () => {
     if (!userInput.trim()) return;
